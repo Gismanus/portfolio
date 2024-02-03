@@ -5,34 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <style>
-      img {
+      body{
+        background-color: rgb(225, 218, 205);
+      }
+      .other-images img {
         width: 300px;
+      }
+      .d-flexed{
+        display: flex;
+        justify-content: space-between;
+      }
+      .col-flexed {
+        display: flex;
+        flex-direction: column;
+      }
+      .task {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .task img {
+        width: 40%;
+        height: 40%;
       }
     </style>
   </head>
   <body>
-    <img src="images/Ресурс 1.png" alt="" />
-    <img src="images/photo_5404460114695540307_x.jpg" alt="" />
-    <img src="images/Asset 1.png" alt="" />
-    <img src="images/logo_ai_mic.svg" alt="" />
-    <img src="images/lol.jpg" alt="" />
-    <img src="images/my-icons-curvator.svg" alt="" />
-    <img src="images/peach.svg" alt="" />
-    <img src="images/penguin.png" alt="" />
-
-    <div class="fonts">
-      <img src="images/1x/Artboard_14.png" alt="" />
-      <img src="images/1x/Artboard_15.png" alt="" />
-      <img src="images/1x/Artboard_16.png" alt="" />
-      <img src="images/1x/Artboard_17.png" alt="" />
-      <img src="images/1x/Artboard_18.png" alt="" />
-      <img src="images/1x/Artboard_19.png" alt="" />
-      <img src="images/1x/Artboard_20.png" alt="" />
-      <img src="images/1x/Artboard_21.png" alt="" />
+    <div class="task">
+      <h1 class="task1__title">
+        Убрать у изображения логотип телеканала “Пятница” (с продлением фона в
+        виде полосок)
+      </h1>
+      <div class="d-flexed">
+        <img src="Task/1.jpeg" alt="" />
+        <img src="Task/1_complete.jpg" alt="" />
+      </div>
     </div>
-    <div class="girl">
-      <img src="images/girl/cb085c0b733a03c8666eb04119e0393e.jpg" alt="" />
-      <img src="images/girl/girl.png" alt="" />
+    <div class="task">
+      <h1 class="task2__title">
+        Найти фото Дженифер Энистон в анфас, итоговый вариант предоставить в
+        двух вариантах в jpg:
+      </h1>
+      <div class="d-flexed">
+        <img src="Task/2_500px.jpg" alt="" />
+        <img src="Task/2_500_667px.jpg" alt="" />
+      </div>
+    </div>
+    <div class="task">
+      <h1 class="task3__title">
+        Вырезать фон с фото, итоговый вариант предоставить в формате png на
+        прозрачном фоне с исходными размерами фотографии. Края должны быть
+        аккуратными, четкими и ровными.
+      </h1>
+      <div class="d-flexed">
+        <img src="Task/3.jpg" alt="" />
+        <img src="Task/3_complete.png" alt="" />
+      </div>
+    </div>
+    <div class="task">
+      <h1 class="task4__title">
+        Сделать из горизонтального постера вертикальный с сохранением надписи.
+      </h1>
+      <div class="d-flexed">
+        <div class="col-flexed">
+          <img src="Task/4.jpg" alt="" style="width: 100%" />
+          <p style="width: 300px; font-size: 18px;">
+            Необходимо сделать постер с соотношением 720х1080 px. Для наращивания
+            фона допускается небольшое растягивание краев изображения, добавление
+            плавного градиента, обрезка краев изображения, не содержащих надпись.
+            Запрещается: резкий переход цвета у границ слоев изображения, искажение
+            зоны с текстом, неестественные следы ретуширования.
+          </p>
+        </div>
+        <img src="Task/4_cmplete.jpg" alt="" style="width: 100%"/>
+      </div>
+      
+    </div>
+
+    <div class="other-images">
+      <img src="images/Ресурс 1.png" alt="" />
+      <img src="images/photo_5404460114695540307_x.jpg" alt="" />
+      <img src="images/Asset 1.png" alt="" />
+      <img src="images/logo_ai_mic.svg" alt="" />
+      <img src="images/lol.jpg" alt="" />
+      <img src="images/my-icons-curvator.svg" alt="" />
+      <img src="images/peach.svg" alt="" />
+      <img src="images/penguin.png" alt="" />
+      <div class="fonts">
+        <img src="images/1x/Artboard_14.png" alt="" />
+        <img src="images/1x/Artboard_15.png" alt="" />
+        <img src="images/1x/Artboard_16.png" alt="" />
+        <img src="images/1x/Artboard_17.png" alt="" />
+        <img src="images/1x/Artboard_18.png" alt="" />
+        <img src="images/1x/Artboard_19.png" alt="" />
+        <img src="images/1x/Artboard_20.png" alt="" />
+        <img src="images/1x/Artboard_21.png" alt="" />
+      </div>
+      <div class="girl">
+        <img src="images/girl/cb085c0b733a03c8666eb04119e0393e.jpg" alt="" />
+        <img src="images/girl/girl.png" alt="" />
+      </div>
     </div>
   </body>
 </html>
