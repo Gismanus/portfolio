@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <style>
-      body{
+      body {
         background-color: rgb(225, 218, 205);
       }
       .other-images img {
         width: 300px;
       }
-      .d-flexed{
+      .d-flexed {
         display: flex;
         justify-content: space-between;
       }
@@ -28,6 +28,15 @@
         width: 40%;
         height: 40%;
       }
+
+      @media (max-width: 650px) {
+        h1 {
+          font-size: 18px;
+        }
+        .d-flexed{
+          flex-wrap: wrap;
+        }
+      }
     </style>
   </head>
   <body>
@@ -43,8 +52,14 @@
     </div>
     <div class="task">
       <h1 class="task2__title">
-        Найти фото Дженифер Энистон в анфас, итоговый вариант предоставить в
-        двух вариантах в jpg:
+        <p>
+          Найти фото Дженифер Энистон в анфас, итоговый вариант предоставить в
+          двух вариантах в jpg:
+        </p>
+        <div class="d-flexed">
+          <p>1. формат 1х1 соотношение сторон 500х500 px</p>
+          <p>2. формат 3х4 соотношение сторон любое</p>
+        </div>
       </h1>
       <div class="d-flexed">
         <img src="Task/2_500px.jpg" alt="" />
@@ -66,23 +81,24 @@
       <h1 class="task4__title">
         Сделать из горизонтального постера вертикальный с сохранением надписи.
       </h1>
-      <div class="d-flexed">
+      <div class="d-flexed" >
         <div class="col-flexed">
           <img src="Task/4.jpg" alt="" style="width: 100%" />
-          <p style="width: 300px; font-size: 18px;">
-            Необходимо сделать постер с соотношением 720х1080 px. Для наращивания
-            фона допускается небольшое растягивание краев изображения, добавление
-            плавного градиента, обрезка краев изображения, не содержащих надпись.
-            Запрещается: резкий переход цвета у границ слоев изображения, искажение
-            зоны с текстом, неестественные следы ретуширования.
+          <p style="width: 300px; font-size: 18px">
+            Необходимо сделать постер с соотношением 720х1080 px. Для
+            наращивания фона допускается небольшое растягивание краев
+            изображения, добавление плавного градиента, обрезка краев
+            изображения, не содержащих надпись. Запрещается: резкий переход
+            цвета у границ слоев изображения, искажение зоны с текстом,
+            неестественные следы ретуширования.
           </p>
         </div>
-        <img src="Task/4_cmplete.jpg" alt="" style="width: 100%"/>
+        <img src="Task/4_cmplete.jpg" alt="" style="width: 100%" />
       </div>
-      
     </div>
 
     <div class="other-images">
+      <h1>Other images</h1>
       <img src="images/Ресурс 1.png" alt="" />
       <img src="images/photo_5404460114695540307_x.jpg" alt="" />
       <img src="images/Asset 1.png" alt="" />
